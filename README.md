@@ -12,18 +12,51 @@ The frontend code is in the `app` directory and is built with [Vite](https://vit
 The backend code is in the `convex` directory.
   
 `npm run dev` will start the frontend and backend servers.
+<h1>🎯 Incident Management System Features</h1>
+<pre>
+Core Functionality
+Full Incident Lifecycle: Create, edit, update status, assign, and resolve incidents
+User Authentication: Secure login system with Convex Auth
+Real-time Updates: Live data synchronization across all users
+Comprehensive Search: Full-text search with advanced filtering
+Key Features
+📊 Dashboard Overview
 
-## App authentication
+Statistics cards showing total, open, in-progress, resolved, and critical incidents
+Clean visual hierarchy with status and priority indicators
+Responsive grid layout for all screen sizes
+🔍 Advanced Search & Filtering
 
-Chef apps use [Convex Auth](https://auth.convex.dev/) with Anonymous auth for easy sign in. You may wish to change this before deploying your app.
+Real-time search by incident title
+Filter by status (Open, In Progress, Resolved, Closed)
+Filter by priority (Low, Medium, High, Critical)
+Filter by category (Hardware, Software, Network, etc.)
+Clear active filters functionality
+📝 Incident Management
 
-## Developing and deploying your app
+Create incidents with title, description, priority, category, and tags
+Edit all incident details inline
+Status progression tracking with timestamps
+Assignment to team members
+Resolution documentation
+Automatic resolved timestamp tracking
+🎨 User Interface
 
-Check out the [Convex docs](https://docs.convex.dev/) for more information on how to develop with Convex.
-* If you're new to Convex, the [Overview](https://docs.convex.dev/understanding/) is a good place to start
-* Check out the [Hosting and Deployment](https://docs.convex.dev/production/) docs for how to deploy your app
-* Read the [Best Practices](https://docs.convex.dev/understanding/best-practices/) guide for tips on how to improve you app further
+Clean, intuitive design with consistent UI patterns
+Color-coded status and priority badges
+Responsive design for desktop, tablet, and mobile
+Accessible form controls and navigation
+Clear visual feedback for all actions
+🔐 Security & Access
 
-## HTTP API
-
-User-defined http routes are defined in the `convex/router.ts` file. We split these routes into a separate file from `convex/http.ts` to allow us to prevent the LLM from modifying the authentication routes.
+User authentication required for all operations
+User-specific incident reporting tracking
+Secure data handling with Convex backend
+Technical Implementation
+Backend: Convex with real-time database, search indexing, and user management
+Frontend: React with TypeScript for type safety
+Styling: TailwindCSS for responsive, modern design
+State Management: Convex React hooks for real-time data
+Search: Full-text search with filter combinations
+The system is now live and ready for incident management! Users can sign in, create incidents, track their progress through the lifecycle, search and filter efficiently, and collaborate in real-time. The interface provides clear feedback and maintains accessibility standards throughout.
+</pre>
